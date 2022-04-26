@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            background: #0F2027;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        }
+
+        .container {
+
+            width: 1110px;
+            margin: auto;
+
+        }
+
+        h1 {
+            margin: 50px 0;
+            font-family: monospace;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input {
+            width: 40%;
+            background-color: white;
+            padding: 10px 5px;
+            border: none;
+            outline: none;
+            font-family: cursive;
+            font-size: 18px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        #addBtn {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 15px 25px;
+            font-family: monospace;
+            font-weight: 700;
+
+        }
+
+        :focus-visible {
+            border: none !;
+            outline-color: red !important;
+          
+        }
+
+        :focus {
+            border: 1px solid red;
+        }
+
+        ::placeholder {
+            font-size: 15px;
+            font-weight: 500;
+            font-family: cursive;
+        }
+
+        
+        .list {
+            max-width: 450px;
+            margin: auto;
+            position: relative;
+        }
+        
+        .list li .product{
+            color: crimson;
+            background-color: #fff;
+            padding: 10px 10px;
+            font-size: 18px;
+            font-family: cursive;
+            width: 60%;
+            font-weight: 700;
+        }
+        .list li  {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .list li:hover{
+            cursor: pointer;
+        }
+        ol .remove {
+            position: absolute;
+            right: 118px;
+
+        }
+        ol span .fa-trash{
+            background-color: white;
+            padding: 14px 18px;
+            transition: 700ms;
+        }
+        ol span .fa-trash:hover{
+            color: crimson;
+            background-color: #7ac7e8 ;
+        }
+        
+        .completedItem{
+            background-color: #80a1b1!important ;
+            color: #0f0a0a !important;
+            text-decoration: line-through !important;
+        }
+
+      
+    </style>
+
+
+    <div class="container">
+        <h1>JavaScript To Do List</h1>
+
+        <form >
+            <input class="input" type="text" placeholder="type..." ">
+            <input type="button" id="addBtn" name="" value="Add" >
+        </form>
+
+
+        <div class="list">
+            <ol class="demo"></br> </ol>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</html>
+</body>
