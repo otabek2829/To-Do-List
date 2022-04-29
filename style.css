@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #0f2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2c5364, #203a43, #0f2027);
+}
+
+.container {
+  width: 1110px;
+  margin: auto;
+}
+
+h1 {
+  margin: 50px 0;
+  font-family: monospace;
+  text-align: center;
+  color: white !important;
+  font-size: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.input {
+  width: 40%;
+  background-color: white;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#addBtn {
+  border: none;
+  background-color: #61bb85;
+  color: black;
+  padding: 15px 25px;
+  font-family: monospace;
+  font-weight: 700;
+}
+#clearBtn:hover,
+#addBtn:hover {
+  cursor: pointer;
+}
+#clearBtn {
+  border: none;
+  background-color: #d78f8f;
+  color: black;
+  padding: 13px 8px;
+  margin-left: 8px;
+}
+
+:focus-visible {
+  border: none !;
+  outline-color: red !important;
+}
+
+:focus {
+  border: 1px solid red;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Arial;
+}
+
+.list {
+  max-width: 450px;
+  margin: auto;
+  position: relative;
+}
+
+.list li .product {
+  color: #463430;
+  background-color: #fff;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-family: Arial;
+  width: 60%;
+  font-weight: 700;
+}
+.list li {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list li:hover {
+  cursor: pointer;
+}
+ol .remove {
+  position: absolute;
+  right: 118px;
+}
+ol span .fa-trash {
+  background-color: #6a4444;
+  color: #ccc6c6;
+  padding: 14px 18px;
+  transition: 700ms;
+}
+ol span .fa-trash:hover {
+  color: crimson;
+  background-color: #7ac7e8;
+}
+
+.completedItem {
+  background-color: #80a1b1 !important ;
+  color: #0f0a0a !important;
+  text-decoration: line-through !important;
+}
+
+@media (min-width: 320px) {
+  h1 {
+    font-size: 28px !important;
+  }
+  .input {
+    width: 67%;
+  }
+  #addBtn {
+    padding: 13px 18px;
+  }
+  ol .remove {
+    right: 38px;
+  }
+  .list li .product {
+    width: 67%;
+    margin-left: 31px;
+  }
+}

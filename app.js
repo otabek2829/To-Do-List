@@ -70,3 +70,13 @@ for (let i = 0; i < li.length; i++) {
         li[i].style.display = 'none'
     })
 }   
+
+
+// Hamma  ma'lumotlarni o'chirish clear
+
+const clearBtn = document.querySelector('#clearBtn');
+
+clearBtn.addEventListener('click', () => {
+    localStorage.clear()
+    location.reload()
+})
